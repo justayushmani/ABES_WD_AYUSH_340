@@ -1,29 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
 </head>
 <body>
-   
-    <h1 align = "center">Login Page</h1>
-    <form action="Login">
-        <table border = "0" cellpadding = "6" cellspacing = "0" align = "center">
-            <td>User Name:</td>
-            <td><input type = "text" name = "fullname" required></td>
+  <h1 align="center">Login Page</h1>
 
+  <form onsubmit="myFunction(); return false;" align="center">
+    <table border="0" cellpadding="6" cellspacing="0" align="center">
+      <tr>
+        <td>User Name:</td>
+        <td><input type="text" name="fullname" required id="name1"></td>
+      </tr>
+      <tr>
+        <td>Password:</td>
+        <td><input type="password" name="password" required id="pass1"></td>
+      </tr>
+      <tr>
+        <td colspan="2" align="center">
+          <input type="submit" value="Submit">
+          <input type="reset" value="Reset">
+        </td>
+      </tr>
+    </table>
+  </form>
 
-            <tr>
-            <td>Password:</td>
-            <td><input type = "password" name = "password" required></td>
-            </tr>
-            <tr>
-                <td colspan = "2" align = "center">
-                    <input type = "submit" value = "Submit">
-                    <input type = "reset" value = "Reset">
-                </td>
-             </tr>
-                
+  <p id="demo" align="center"></p>
+<script src="validation.js"></script>
 </body>
 </html>
