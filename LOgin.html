@@ -8,15 +8,15 @@
 <body>
   <h1 align="center">Login Page</h1>
 
-  <form onsubmit="myFunction(); return false;" align="center">
+  <form onsubmit="validateForm(); return false;" align="center">
     <table border="0" cellpadding="6" cellspacing="0" align="center">
       <tr>
         <td>User Name:</td>
-        <td><input type="text" name="fullname" required id="name1"></td>
+        <td><input type="text" name="fullname" required id="name"></td>
       </tr>
       <tr>
         <td>Password:</td>
-        <td><input type="password" name="password" required id="pass1"></td>
+        <td><input type="password" name="password" required id="password"></td>
       </tr>
       <tr>
         <td colspan="2" align="center">
@@ -26,7 +26,6 @@
       </tr>
     </table>
   </form>
-
   <p id="demo" align="center"></p>
 <script src="validation.js"></script>
 </body>
