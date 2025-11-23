@@ -1,21 +1,22 @@
+/* ---------------- NAVBAR ---------------- */
+
 .nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 64px;
   width: 100%;
-  margin: 0;
   padding: 0 18px;
+  margin: 0;
+
   background: linear-gradient(90deg, #ffffff 0%, #f6f8fb 100%);
   box-shadow: 0 2px 6px rgba(20, 20, 40, 0.06);
-}
 
-/* Optional: if you add a background image to .nav */
-.nav {
+  /* Background image settings */
   background-image: url("your-image.jpg");
-  background-repeat: no-repeat; /* 👈 Prevents image repetition */
-  background-size: cover;       /* Makes image cover full width */
-  background-position: center;  /* Centers the image */
+  background-repeat: no-repeat;  /* Prevents repetition */
+  background-size: cover;        /* Makes image cover area */
+  background-position: center;   /* Centers image */
 }
 
 .nav img.logo {
@@ -34,10 +35,11 @@
   width: 38%;
   max-width: 560px;
   min-width: 180px;
-  margin-left: 6px;
+
   border-radius: 20px;
   border: 1px solid #d6dbe6;
   padding: 0 14px;
+
   outline: none;
   background: #ffffff;
   box-shadow: inset 0 1px 2px rgba(16, 24, 40, 0.02);
@@ -53,20 +55,19 @@
   height: 40px;
   padding: 8px 14px;
   border-radius: 20px;
-  border: 1px solid transparent;
+  cursor: pointer;
+
   background-color: transparent;
+  border: 1px solid transparent;
+
   color: #0a0a0a;
   font-weight: 600;
-  cursor: pointer;
+
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  transition: background-color 0.18s ease, color 0.18s ease,
-    transform 0.08s ease;
-}
 
-.nav button:active {
-  transform: translateY(1px);
+  transition: background-color 0.18s ease, color 0.18s ease, transform 0.08s ease;
 }
 
 .nav button:hover {
@@ -74,60 +75,74 @@
   color: white;
 }
 
+.nav button:active {
+  transform: translateY(1px);
+}
+
 .nav button img {
   height: 18px;
-  width: auto;
-  display: inline-block;
 }
 
 .nav button:hover img {
   filter: brightness(0) invert(1);
 }
 
-/* Box section */
+
+/* ---------------- BOX SECTION ---------------- */
+
 .box1 {
   height: 64px;
   width: 100%;
   margin: 20px;
   padding: 0 18px;
+
   background: linear-gradient(90deg, #ffffff 0%, #f6f8fb 100%);
   box-shadow: 0 2px 6px rgba(20, 20, 40, 0.06);
 
-  /* Example image background */
+  /* Background repeats horizontally only */
   background-image: url("box-bg.png");
-  background-repeat: repeat-x; /* 👈 Only repeat horizontally */
+  background-repeat: repeat-x;
 }
 
 .box1 button {
-  height: 40px;
   margin-top: 20px;
+
+  height: 40px;
   padding: 8px 14px;
   border-radius: 20px;
+  cursor: pointer;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
   border: 1px solid transparent;
   background-color: transparent;
   color: #0a0a0a;
   font-weight: 600;
-  cursor: pointer;
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
 }
 
-/* 🌐 Link Styles */
+
+/* ---------------- LINK STYLES ---------------- */
+
+/* Normal state */
 a:link {
   color: #0a0a0a;
   text-decoration: none;
 }
 
+/* Visited */
 a:visited {
   color: #6c63ff;
 }
 
+/* Hover */
 a:hover {
   color: #1020a7;
   text-decoration: underline;
 }
 
+/* Active (clicked) */
 a:active {
   color: #ff3b3b;
 }
